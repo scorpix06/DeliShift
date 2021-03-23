@@ -29,7 +29,7 @@ class dataBaseActions:
         self.dataBase.commit()
 
 a = dataBaseActions()
-a.delDeliveryMan("Alban")
+a.addDeliveryMan("Alban")
 
 
     
