@@ -3,7 +3,6 @@
 # avec notament le temps travailler, le revenu etc
 # Tout cela dans une base de donnée et 
 
-# Test git
 
 from flask import jsonify
 from flask import Flask
@@ -15,7 +14,7 @@ app = Flask(__name__)
 def home():
 	return "Ce projet a pour but d'enregistrer toutes les infos des shifts Uber eats / Deliveroo etc.. avec notament le temps travailler, le revenu etc. Tout cela dans une base de donnée." 
 
-@app.route("/api/<livreur>/start")
+@app.route("/api/v1/start/<livreur>")
 def start(livreur):
 	livreur = livreur
 	dateAndTime = datetime.datetime.now()
